@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-	<script type="text/javascript" src="jquery.sticky.js"></script>
+	<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link href="css/jquery-backToTop.min.css" rel="stylesheet" type="text/css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+	<script src="js/jquery-backToTop.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.sticky.js"></script>
 	<meta charset="utf-8">
 	<title>Welcome to Vecta Corp.</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/skeleton.css">
 	<link rel="stylesheet" href="css/layout.css">
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-	<link rel="stylesheet" href="/resources/demos/style.css">
-	
-	<!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">    
+	<script src="https://code.jquery.com/ui/3.3.1/jquery-ui.js"></script>
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -23,7 +25,7 @@
 	<script src="js/jquery.mobilemenu.js"></script>
 	<script>
 		$(document).ready(function(){
-			$("#testimonials").sticky({topSpacing:200});
+			$("#testimonials").sticky();
 			$('#responsive-menu').mobileMenu();
 			
 		});
@@ -36,11 +38,7 @@
 			$( "#accordion" ).accordion();
 		} );
 	</script>
-	<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-	<link href="css/jquery-backToTop.min.css" rel="stylesheet" type="text/css">
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
-	<script src="js/jquery-backToTop.min.js"></script>
+
 </head>
 <body>
 	<script>
@@ -107,7 +105,7 @@
 			<p>&nbsp;</p>
 		</section>
 		
-		<div id="testimonials" class="five columns">
+		<section id="testimonials" class="five columns">
 			<h4>Quick Nav</h4>
 
 			<!-- INSERT ACCORDION HERE -->
@@ -118,7 +116,7 @@
 					<li><a href="#vretain">vRetain 1.0</a></li>
 				</ul>
 			</div>
-		</div>
+		</section>
 	</main>
 </body>
 </html>
